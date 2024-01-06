@@ -17,7 +17,7 @@
   >
 </head>
 <body class="page">
-  <div class="page__main">
+  <section class="page__main">
     <img src="./eisenhower-matrix.jpg">
     <a
       class="main__more-info"
@@ -25,49 +25,67 @@
     >
     Want more details?
     </a>
-  </div>
-  <div class="main__content">
-    <p id="topSection">
-      <label for="new-task" class="content__new-task">Add Item</label>
+  </section>
+  <section class="main__content">
+    <article id="topSection">
+      <h1 for="new-task" class="content__new-task">Add Item</h1>
       <div class="content__task-row-wrapper">
-        <input id="new-task" class="content__task content__task-text" type="text">
+        <input
+          id="new-task"
+          class="content__task content__task-text"
+          type="text"
+        >
         <button>Add</button>
       </div>
-    </p>
-    <h3>Todo</h3>
-    <ul id="incomplete">
-      <li>
-        <input type="checkbox" class="content__check">
-        <label class="content__task">Pay Bills</label>
-        <input type="text" class="content__task content__task-text content__task-t">
-        <button class="content__edit">Edit</button>
-        <button class="content__delete">
-          <img src="./remove.svg">
-        </button>
-      </li>
-      <li class="content__edit-mode">
-        <input type="checkbox" class="content__check">
-        <label class="content__task">Go Shopping</label>
-        <input type="text" value="Go Shopping" class="content__task content__task-text content__task-t">
-        <button class="content__edit">Save</button>
-        <button class="content__delete">
-          <img src="./remove.svg">
-        </button>
-      </li>
-    </ul>
-    <h3>Completed</h3>
-    <ul id="completed">
-      <li>
-        <input type="checkbox" class="content__check" checked>
-        <label class="content__task">See the Doctor</label>
-        <input type="text" class="content__task content__task-text content__task-t">
-        <button class="content__edit">Edit</button>
-        <button class="content__delete">
-          <img src="./remove.svg">
-        </button>
-      </li>
-    </ul>
-  </div>
+    </article>
+    <article id="todoSection">
+      <h3>Todo</h3>
+      <ul id="incomplete">
+        <li>
+          <input type="checkbox" class="content__check">
+          <label class="content__task">Pay Bills</label>
+          <input
+            type="text"
+            class="content__task content__task-text content__task-t"
+          >
+          <button class="content__edit">Edit</button>
+          <button class="content__delete">
+            <img src="./remove.svg">
+          </button>
+        </li>
+        <li class="content__edit-mode">
+          <input type="checkbox" class="content__check">
+          <label class="content__task">Go Shopping</label>
+          <input
+            type="text"
+            value="Go Shopping"
+            class="content__task content__task-text content__task-t"
+          >
+          <button class="content__edit">Save</button>
+          <button class="content__delete">
+            <img src="./remove.svg">
+          </button>
+        </li>
+      </ul>
+    </article>
+    <article id="completedSection">
+      <h3>Completed</h3>
+      <ul id="completed">
+        <li>
+          <input type="checkbox" class="content__check" checked>
+          <label class="content__task">See the Doctor</label>
+          <input
+            type="text"
+            class="content__task content__task-text content__task-t"
+          >
+          <button class="content__edit">Edit</button>
+          <button class="content__delete">
+            <img src="./remove.svg">
+          </button>
+        </li>
+      </ul>
+    </article>
+  </section>
   <script src="app.js"></script>
 </body>
 </html>
