@@ -22,6 +22,7 @@
     text-align: center;
   }
 }
+
 .main__content {
   display: block;
   width: 500px;
@@ -44,7 +45,7 @@ h3 {
   list-style: none;
 }
 input,
-button{
+button {
   outline: none;
 }
 button {
@@ -59,7 +60,9 @@ button {
 button:hover {
   color: #3a3a3a;
 }
+
 /* Heading */
+
 h3,
 label[for="new-task"] {
   color: #333;
@@ -87,6 +90,7 @@ label[for="new-task"] {
 }
 
 /* New Task */
+
 .content__new-task {
   display: block;
   margin: 0 0 20px;
@@ -96,6 +100,7 @@ label[for="new-task"] {
 }
 
 /* Task list */
+
 li {
   overflow: hidden;
   padding: 20px 0;
@@ -130,12 +135,14 @@ li > .content__task-text {
 }
 
 /* Completed */
+
 #completed label {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
+
 ul li input[type=text] {
   display: none;
 }
